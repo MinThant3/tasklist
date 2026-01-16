@@ -1,0 +1,23 @@
+<html>
+    <table border = "5">
+        <tr>
+            <th>
+                Task Name
+            </th>
+            <th>
+                Is Done 
+            </th>
+
+        </tr>
+        
+        {% for task in TaskList %} <!--flask_Jinja2_template loop syntax. -->
+        <tr>
+            <td>
+                {{task[0]}}<!--name[index]-->
+            </td>
+            <td>
+                {{task[1]}}
+            </td>
+        </tr>
+        {%endfor%} <!-- close for loop (bid D)-->
+    </html>
